@@ -18,25 +18,66 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
-var content = document.getElementById("right");
-console.log(content.innerHTML);
-
 const headings = [];
+const sections = [];
 
 $("h2, h3").each(function() {
- headings.push("<" + this.tagName + ">" + $(this).html() + "</" + this.tagName + ">");
+  headings.push("<" + this.tagName + ">" + $(this).html() + "</" + this.tagName + ">");
+});
+// $("h2, h3").each(function() {
+//   headings.push("<" + this.tagName + ">" + $(this).html() + "</" + this.tagName + ">");
+// });
+$("section").each(function() {
+  // console.log(this.id);
+  sections.push(this.id);
 });
 
-last = 0;
+console.log(sections);
+console.log(headings);
 
-for (int i = 0; i < headings.size(); i++) {
+var bar = "";
+var last = 0;
+
+for (var i = 0; i < headings.length; i++) {
   if (last == 0) {
-    if (headings[2] == '2') {
+    if (headings[i][2] == '2') {
       //concatenate h2;
+      bar = bar + "<li><a href='#" + sections[i] + "'>" + headings[i] + "</a></li>";
     }
     else {
-      //create unordered list
+      //create unordered list and concatenate
+      last = 1;
+      bar = bar.substring(0, bar.length - 5);
+      //<ul>
+      bar = bar + "<ul><li class=''><a href='#" + sections[i] + "'>" + headings[i] + "</a></li>";
     }
   }
-  if (last == )
+  else {
+    if (headings[i][2] == '2') {
+      // close unoredered list
+      last = 0;
+      bar = bar + "</ul> </li> <li><a href='#" + sections[i] + "'>" + headings[i] + "</a></li>";
+    }
+    else {
+      // concatenate
+      bar = bar + "<li class=''><a href='#" + sections[i] + "'>" + headings[i] + "</a></li>";
+    }
+  }
 }
+
+if (last == 1) {
+  bar = bar + "</ul> </li>";
+}
+
+bar = "<nav class='section-nav'><ol>" + bar + "</ol></nav>";
+console.log(bar);
+
+var ele = document.getElementById('left');
+var x = ele.innerHTML;
+bar += x;
+ele.innerHTML = bar;
+// var z = document.createElement('p');
+// z.innerHTML = bar;
+// ele.appendChild(z);
+
+console.log(ele)

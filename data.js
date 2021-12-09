@@ -1,15 +1,14 @@
 export const data = [
   {
-    "title": "abc",
-    "link": "abc",
-    "publication":"publication abc",
-    "author":"some author",
-    "date": "some date",
-    "cost": "some cost",
-    "summary": "some summary",
+    "title": "Think Outside The Box",
+    "link": "thinking-outside-the-box",
+    "publication":"Sidhant Jain Publications",
+    "author":"Sidhant Jain",
+    "year": "2021",
+    "cost": "Free",
+    "summary": "Thinking outside the box (also thinking out of the box or thinking beyond the box and, especially in Australia, thinking outside the square) is a metaphor that means to think differently, unconventionally, or from a new perspective. This phrase often refers to novel or creative thinking.",
     "content": `<div>
-      <h1>Smooth Scrolling Sticky ScrollSpy Navigation</h1>
-      <p><em>Want an explanation of how this works?<br />&rarr; <a href="https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/" target="_top">https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/</a></em></p>
+      <h1 class="my-5">Think Outside the Box</h1>
       <section id="introduction">
         <h2>Introduction</h2>
         <p>…</p>
