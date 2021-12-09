@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Online Bookshelf</title>
+</head>
+
+<body>
+
+  <h1 class="text-center mt-3">ONLINE BOOKSHELF</h1>
+  <!-- <div class="card-deck"> -->
+    <div class="card m-5" style="width: 18rem;">
+      <img class="card-img-top" src="book-img.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= data[0].title %></h5>
+        <p class="card-text text-muted">by <%= data[0].author %></p>
+        <p class="card-text text-muted">published by <%= data[0].publication %></p>
+        <p class="card-text"><%= data[0].summary %></p>
+      </div>
+      <div class="card-footer">
+        <a href=<%= data[0].link %> class="btn btn-primary">Read</a>
+      </div>
+    </div>
+  <!-- </div> -->
+
+</body>
+
+</html>
