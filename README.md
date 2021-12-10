@@ -2,11 +2,13 @@
 
 # Online-Bookshelf
 
-Link to the web app: https://online-bookshelf.herokuapp.com/
+## Link to the web app
+https://online-bookshelf.herokuapp.com/
 
-Link to the youtube video: https://youtu.be/orN7zKfORAY
+## Link to the youtube video
+https://youtu.be/orN7zKfORAY
 
-How to set up and run the app locally:
+## How to set up and run the app locally
 - Clone the repository.
 - cd into the cloned repository.
 - Run command ```npm install``` to install the dependencies.
