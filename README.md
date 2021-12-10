@@ -13,4 +13,4 @@ https://youtu.be/orN7zKfORAY
 - cd into the cloned repository.
 - Run command ```npm install``` to install the dependencies.
 - Run command ```npm start``` to start the application.
-- Go to https://localhost:3000 in your brower.
+- Go to http://localhost:3000/ in your brower.
