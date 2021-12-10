@@ -1,7 +1,7 @@
 export const data = [
   {
     "title": "Think Outside The Box",
-    "link": "thinking-outside-the-box",
+    "link": "0",
     "publication":"Sidhant Jain Publications",
     "author":"Sidhant Jain",
     "year": "2021",

@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/:book', (req, res) => {
-  // console.log(document)
-  res.render('book', { data : data, bookId: req.params.book });
+  console.log(req.params.book);
+  res.render('book', { bookData : data[req.params.book] });
 })
 
 app.listen(process.env.PORT||3000);
